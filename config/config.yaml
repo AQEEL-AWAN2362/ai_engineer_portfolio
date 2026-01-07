@@ -1,0 +1,64 @@
+# MediChat RAG Configuration
+
+# Document Processing Settings
+document_processing:
+  chunk_size: 1000          # Size of each text chunk in characters
+  chunk_overlap: 200        # Overlap between consecutive chunks
+  separators:               # Text splitting separators (in order of preference)
+    - "\n\n"               # Paragraph breaks
+    - "\n"                 # Line breaks
+    - ". "                 # Sentence breaks
+    - " "                  # Word breaks
+    - ""                   # Character breaks
+
+# RAG Chain Settings
+rag:
+  model_name: "gpt-3.5-turbo"  # OpenAI model to use
+  temperature: 0.3              # Response creativity (0-1, lower = more focused)
+  max_tokens: 1024              # Maximum tokens in response
+  top_k: 5                      # Number of documents to retrieve
+  search_type: "similarity"     # Vector search type
+
+# Chat Manager Settings
+chat:
+  max_history: 20               # Maximum messages to keep in history
+  enable_export: true           # Allow chat history export
+  
+# Embeddings Settings
+embeddings:
+  model: "text-embedding-ada-002"  # OpenAI embeddings model
+  chunk_size: 1000                 # Embedding chunk size
+  
+# Vector Store Settings
+vector_store:
+  type: "FAISS"                 # Vector store type
+  persist: false                # Whether to persist vector store to disk
+  
+# Logging Settings
+logging:
+  level: "INFO"                 # Log level (DEBUG, INFO, WARNING, ERROR)
+  file: "logs/medichat.log"     # Log file path
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+# UI Settings
+ui:
+  page_title: "MediChat RAG"
+  page_icon: "🏥"
+  layout: "wide"
+  theme:
+    primary_color: "#0066cc"
+    background_color: "#ffffff"
+    secondary_background_color: "#f0f2f6"
+    
+# Safety Settings
+safety:
+  enable_input_sanitization: true
+  max_query_length: 1000
+  allowed_file_types: ["pdf"]
+  max_file_size_mb: 10
+  
+# Performance Settings
+performance:
+  cache_enabled: true
+  batch_processing: false
+  max_concurrent_requests: 1

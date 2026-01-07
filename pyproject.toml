@@ -1,0 +1,28 @@
+[project]
+name = "medichat-rag"
+version = "0.1.0"
+description = "AI-powered Medical Knowledge RAG Chatbot with source citations"
+readme = "README.md"
+authors = [
+    {name = "Muhammad Aqeel", email = "ai.engineer.aqeel@gmail.com"}
+]
+license = {text = "MIT"}
+keywords = ["rag", "chatbot", "medical", "ai", "langchain", "llm"]
+requires-python = ">=3.12.12"
+dependencies = [
+    "chromadb>=1.4.0",
+    "faiss-cpu>=1.13.2",
+    "langchain>=1.2.1",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.1",
+    "langchain-openai>=1.1.6",
+    "langchain-text-splitters>=0.0.1",
+    "openai>=2.14.0",
+    "pdfplumber>=0.11.9",
+    "pypdf>=6.5.0",
+    "pytest>=9.0.2",
+    "python-dotenv>=1.2.1",
+    "pyyaml>=6.0.3",
+    "streamlit>=1.52.2",
+    "tiktoken>=0.12.0",
+]
