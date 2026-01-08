@@ -2,6 +2,8 @@
 
 Welcome to MediChat RAG! This comprehensive guide will help you get the most out of the medical knowledge assistant.
 
+Here is quick demo link of app: https://aqeel-awan2362-ai-engineer-portfolio-app-hhnsba.streamlit.app/
+
 ## Table of Contents
 
 1. [Getting Started](#getting-started)
