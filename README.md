@@ -7,6 +7,8 @@
 
 An AI-powered medical knowledge chatbot that uses Retrieval-Augmented Generation (RAG) to answer questions based on uploaded medical documents or general medical knowledge.
 
+Here is quick demo link: https://aqeel-awan2362-ai-engineer-portfolio-app-hhnsba.streamlit.app/
+
 ## ✨ Features
 
 - 📄 **PDF Document Processing**: Upload and process medical PDF documents
@@ -53,7 +55,7 @@ MediChat RAG Pipeline:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AQEEL-AWAN2362/ai_engineer_portfolio.git
    cd "MediChat RAG"
    ```
 
@@ -124,34 +126,16 @@ MediChat RAG/
 │   ├── rag_chain.py          # RAG pipeline orchestration
 │   ├── chat_manager.py       # Chat history management
 │   └── utils.py              # Utility functions
-├── tests/
-│   ├── test_document_processor.py
-│   ├── test_rag_chain.py
-│   └── test_vector_store.py
+
 ├── docs/
-│   ├── Architecture.md       # System architecture details
-│   ├── DEPLOYMENT.md         # Deployment instructions
 │   └── USER_GUIDE.md         # Detailed user guide
-├── logs/                     # Application logs
-├── data/                     # User data (ignored in git)
+
 ├── .env                      # Environment variables
 ├── pyproject.toml           # Project dependencies
 └── README.md                # This file
 ```
 
-## 🧪 Testing
 
-Run the test suite:
-
-```bash
-pytest tests/
-```
-
-Run specific test file:
-
-```bash
-pytest tests/test_document_processor.py -v
-```
 
 ## 🔧 Configuration
 
@@ -170,12 +154,6 @@ Edit `config/config.yaml` to customize:
 - **Memory**: ~500MB for typical usage
 - **Concurrent Users**: Designed for single-user deployment
 
-## 🔒 Security & Privacy
-
-- ⚠️ **Not for production medical advice**: This is a demonstration system
-- 🔐 API keys stored locally in `.env` (never committed to git)
-- 📝 Documents processed locally (not sent to external services except OpenAI API)
-- 🗑️ No persistent storage of documents (removed on session end)
 
 ## ⚠️ Disclaimer
 
@@ -199,7 +177,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Muhammad Aqeel**
 - Email: ai.engineer.aqeel@gmail.com
-- GitHub: [Your GitHub Profile]
+- GitHub: https://github.com/AQEEL-AWAN2362/ai_engineer_portfolio
+- streamlit app link: https://aqeel-awan2362-ai-engineer-portfolio-app-hhnsba.streamlit.app/
 
 ## 🙏 Acknowledgments
 
@@ -214,15 +193,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - 🐛 Issues: [GitHub Issues](issues-url)
 - 📖 Documentation: See `docs/` folder
 
-## 🗺️ Roadmap
-
-- [ ] Add support for more document formats (Word, HTML)
-- [ ] Implement conversation export feature
-- [ ] Add multi-user support with authentication
-- [ ] Integrate medical terminology database
-- [ ] Add voice input/output capabilities
-- [ ] Deploy to cloud platforms (AWS, GCP, Azure)
-- [ ] Add evaluation metrics for answer quality
 
 ---
 
