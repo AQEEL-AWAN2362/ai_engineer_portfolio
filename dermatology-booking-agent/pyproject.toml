@@ -1,0 +1,29 @@
+[project]
+name = "dermatology-clinic-booking-ai-agent"
+version = "0.1.0"
+description = "An Ai agent that will book the appointment online for skin care problems related to patient."
+readme = "README.md"
+requires-python = ">=3.12.12"
+dependencies = [
+    "fastapi>=0.128.0",
+    "uvicorn",
+    "sqlmodel",
+    "asyncpg",
+    "pydantic-settings",
+    "langchain",
+    "langgraph",
+    "langchain-groq",
+    "supabase",
+    "streamlit",
+    "python-dotenv",
+    "psycopg2>=2.9.11",
+    "langchain-community>=0.4.1",
+    "langchain-ollama>=1.0.1",
+    "psycopg-pool>=3.3.0",
+    "psycopg[binary,pool]>=3.3.2",
+    "langgraph-checkpoint-postgres>=3.0.3",
+    "langchain-google-community>=3.0.5",
+    "google-auth>=2.48.0",
+    "google-auth-oauthlib>=1.2.4",
+    "google-api-python-client>=2.188.0",
+]
